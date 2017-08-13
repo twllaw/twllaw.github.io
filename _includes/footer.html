@@ -1,0 +1,13 @@
+<footer>
+    <section>
+    All posts:
+        {% for post in site.posts %}
+        <br/>
+        <a class="link" href="{{post.url}}">{{ post.title }}</a>
+    {% endfor %}
+    </section>
+    <br/>
+    {% if site.github.is_project_page %}
+        {{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
+    {% endif %}
+</footer>
