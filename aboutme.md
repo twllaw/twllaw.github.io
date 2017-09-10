@@ -1,11 +1,11 @@
 ---
 layout: blogEntry
 title: About Me
-permalink: /aboutMe/
+permalink: /about-me
 description: "Haha, what a story Mark!"
 ---
 
-Just a software developer from Sydney.
+Just a software dev from Sydney. I started this blog to document my experience as a 'not-so-passionate' developer.
 
 <!-- This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 

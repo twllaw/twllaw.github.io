@@ -20,25 +20,14 @@
           <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
           <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
         </header>
-        <section id="downloads" class="clearfix">
-          {% if site.show_downloads %}
-          <a href="{{ site.github.zip_url }}" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="{{ site.github.tar_url }}" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          {% endif %}
-	  <!-- {% if site.github.is_project_page %}
-          <a href="{{ site.github.repository_url }}" id="view-on-github" class="button"><span>View on GitHub</span></a>
-	  {% else %}
-          <a href="{{ site.github.owner_url }}" id="view-on-github" class="button"><span>View on GitHub</span></a>
-    {% endif %} -->
-          <a href="/aboutMe" class="button"><span>About me</span></a>
-        </section>
         <hr>
         <section id="main_content">
             {% for post in site.posts limit:1%}
             <h2>{{ post.title | default: site.title | default: site.github.repository_name }}</h1>
             <h4>{{ post.description | default: site.description | default: site.github.project_tagline }}</h2>
+            <h6>{{ post.date | date: "%d %b %Y"}}</h6>
             <div>
-              {{post.date | date: "%a, %b %d, %Y"}}   
+              <br/>
               {{post.content}}
             </div>
           {% endfor %}

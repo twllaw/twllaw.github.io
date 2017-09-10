@@ -19,14 +19,14 @@
         <header>
           <h1>{{ site.title | default: site.title | default: site.github.repository_name }}</h1>
           <hr/>
-          <h2>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-          <h4>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
         </header>
         <section id="main_content">
-          {{page.date | date: "%a, %b %d, %Y"}}
+            <h2>{{ page.title | default: site.title | default: site.github.repository_name }}</h2>
+            <h4>{{ page.description | default: site.description | default: site.github.project_tagline }}</h4>
+            <h6>{{ page.date | date: "%d %b %Y"}}</h6>
+            <br/>            
           {{ content }}
         </section>
-
         {% include footer.html %}
       </div>
     </div>
