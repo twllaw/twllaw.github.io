@@ -16,10 +16,7 @@
   <body>
     <div id="container">
       <div class="inner">
-        <header>
-          <h1>{{ site.title | default: site.title | default: site.github.repository_name }}</h1>
-          <hr/>
-        </header>
+        {% include header.html %}
         <section id="main_content">
             <h2>{{ page.title | default: site.title | default: site.github.repository_name }}</h2>
             <h4>{{ page.description | default: site.description | default: site.github.project_tagline }}</h4>

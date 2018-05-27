@@ -1,11 +1,11 @@
 ---
-layout: blogEntry
+layout: about-me
 title: About Me
 permalink: /about-me
-description: "Haha, what a story Mark!"
 ---
+I'm a software developer based in Sydney.
 
-Just a software dev from Sydney. I started this blog to document my experience as a 'not-so-passionate' developer.
+You can find me on <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a>.
 
 <!-- This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 

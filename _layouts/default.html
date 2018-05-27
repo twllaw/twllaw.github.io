@@ -16,11 +16,7 @@
   <body>
     <div id="container">
       <div class="inner">
-        <header>
-          <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-          <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-        </header>
-        <hr>
+        {% include header.html %}
         <section id="main_content">
             {% for post in site.posts limit:1%}
             <h2>{{ post.title | default: site.title | default: site.github.repository_name }}</h1>
