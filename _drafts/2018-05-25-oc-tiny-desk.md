@@ -1,5 +1,5 @@
 ---
-layout: blog-entry
+layout: default
 title:  "Tiny Desk by O.C."
 date:   2018-05-25 00:30:00 +1000
 categories: music hip-hop

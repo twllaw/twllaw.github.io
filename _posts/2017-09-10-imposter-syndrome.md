@@ -1,5 +1,5 @@
 ---
-layout: blog-entry
+layout: default
 title:  "Imposter Syndrome Saga - Episode VII"
 description: "Lucky me"
 categories: life tech work
