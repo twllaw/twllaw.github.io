@@ -19,12 +19,53 @@ a {
     font-weight: bold;
 }
 
-.footer-linkContainer {
+.header-linkContainer {
     padding-top: 15px;
 }
 
-.footer-links {
+.header-links {
     font-size: 16px;
     padding-right: 20px;
     font-weight: bold;
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.image-container {
+    margin: 15px 0;
+    max-height: 1200px;
+    max-width: 600px;
+}
+
+.content-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+iframe {
+    margin: 0 0 15px;
+}
+
+.box-image {
+    width: 100%;
+}
+
+.box-image-container {
+    margin: 10px 10px 5px 0;
+    max-width: 360px;
+}
+
+article, .h-entry {
+    > .game-info {
+        font-size: 14px;
+    }
+    > .post-content {
+        .section-heading {
+            font-weight: bold;
+        }
+    }
 }

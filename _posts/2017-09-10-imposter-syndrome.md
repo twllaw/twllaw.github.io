@@ -5,6 +5,10 @@ description: "Lucky me"
 categories: life tech work
 permalink: /imposter-syndrome
 ---
+<script>
+    test();
+</script>
+
 I recently attended [NDC Sydney][ndcsyd], paid for by work. The following week I was asked to do a brief talk at the tech department meeting about my experience at the conference. My bosses probably expected me to talk about certain technologies and tools, and to come up a few ideas on how we can incorporate these things in our projects.
 
 I decided to talk about these topics instead:
