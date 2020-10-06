@@ -3,31 +3,27 @@ layout: default
 ---
 
 <div class="home">
-  {{ content }}
-
-    <ul class="post-list">
-      {%- for post in site.posts limit:8 -%}
-      {% if post.categories contains "gaming-thoughts" %}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if post.box-art -%}
-        <div class="image-container">
-          <img src="{{ post.box-art}}" alt="{{ post.box-art-desc | default: post.title }}">
-        </div>          
-        {%- endif -%}
-        {%- if site.show_excerpts -%}
-          {{ post.content | strip_html | truncatewords: 50 }}
-        {%- endif -%}
-      </li>
-      {% endif %}
-      {%- endfor -%}
-    </ul>
-
-    <a href="{{ site.baseurl }}/gaming-thoughts/all">More games...</a>
+  <ul class="post-list">
+    {% assign filtered_posts = site.posts | where: "category", "gaming-thoughts" %}
+    {%- for post in filtered_posts limit:8 -%}
+    <li>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      {%- if post.box-art -%}
+      <div class="image-container">
+        <img class="box-art" src="{{ post.box-art}}" alt="{{ post.box-art-desc | default: post.title }}">
+      </div>          
+      {%- endif -%}
+      {%- if site.show_excerpts -%}
+        {{ post.content | strip_html | truncatewords: 50 }}
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+  <a href="{{ site.baseurl }}/gaming-thoughts/all-box-art">More games...</a>
 </div
