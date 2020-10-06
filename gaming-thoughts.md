@@ -1,5 +1,5 @@
 ---
 layout: gaming-thoughts
 title: Gaming Thoughts
-permalink: /gaming-thoughts/
+permalink: /gaming-thoughts
 ---
