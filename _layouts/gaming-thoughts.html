@@ -16,7 +16,7 @@ layout: default
       </h3>
       {%- if post.box-art -%}
       <div class="image-container">
-        <img class="box-art" src="{{ post.box-art}}" alt="{{ post.box-art-desc | default: post.title }}">
+        <img class="box-art" src="/gaming-thoughts/{{ post.box-art}}" alt="{{ post.box-art-desc | default: post.title }}">
       </div>          
       {%- endif -%}
       {%- if site.show_excerpts -%}
