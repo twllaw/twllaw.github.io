@@ -253,7 +253,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  minima
   tzinfo-data
 
 BUNDLED WITH
-   1.17.1
+   2.1.4
