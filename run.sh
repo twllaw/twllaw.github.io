@@ -1,1 +1,5 @@
-bundle exec jekyll serve --baseUrl ''
+command="bundle exec jekyll serve --livereload"
+
+echo $command
+
+$command
