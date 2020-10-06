@@ -5,7 +5,7 @@ permalink: /about
 ---
 ## Gaming Thoughts
 
-My first video game memory was Tetris on the original Game Boy circa 1990.
+My first video game memories were Tetris and Super Mario Land on the original Game Boy circa 1990.
 
 I've played [a lot more games](/gaming-thoughts/all) since, and I just want to document my thoughts on them while the memories are still recent.
 
