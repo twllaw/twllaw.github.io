@@ -51,10 +51,7 @@ a {
 .content-container {
     display: flex;
     flex-flow: row wrap;
-}
-
-iframe {
-    margin: 0 0 15px;
+    margin-bottom: 15px;
 }
 
 .box-art {
@@ -89,4 +86,8 @@ article, .h-entry {
 
 .override {
     float: none;
+}
+
+.post-header {
+    margin-bottom: 0;
 }
