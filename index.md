@@ -1,4 +1,4 @@
 ---
 layout: home
-title: Tony Law 
+title: Home
 ---
