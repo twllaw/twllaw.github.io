@@ -1,6 +1,5 @@
 <header class="site-header" role="banner">
     <div class="wrapper temp">
-        <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
         <nav class="site-nav override">
             <input type="checkbox" id="nav-trigger" class="nav-trigger" />
             <label for="nav-trigger">
@@ -17,6 +16,7 @@
                 <a class="header-link" href="/about">About</a>
             </div>
         </nav>
+        <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
     </div>
   </header>
   
